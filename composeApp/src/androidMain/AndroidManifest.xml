@@ -16,6 +16,28 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" /><!-- because the user wants to see a specific content-->
+                <category android:name="android.intent.category.DEFAULT" /> <!-- if multiple apps can satisfy they will appear as a choice -->
+                <category android:name="android.intent.category.BROWSABLE" /> <!-- deeplink can be opened from a browser-->
+
+                <!-- https://athenalink.com/item/12-->
+                <data android:scheme="https"/>
+                <data android:host="athenalink.com"/>
+                <data android:pathPrefix="/item/"/>
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" /><!-- because the user wants to see a specific content-->
+                <category android:name="android.intent.category.DEFAULT" /> <!-- if multiple apps can satisfy they will appear as a choice -->
+                <category android:name="android.intent.category.BROWSABLE" /> <!-- deeplink can be opened from a browser-->
+
+                <!-- olimpus://athenalink.com/item/12-->
+                <data android:scheme="olimpus"/>
+                <data android:host="athenalink.com"/>
+                <data android:pathPrefix="/item/"/>
+            </intent-filter>
         </activity>
     </application>
 
