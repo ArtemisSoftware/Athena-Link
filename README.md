@@ -32,4 +32,11 @@ in your IDE’s toolbar or open the [/iosApp](./iosApp) directory in Xcode and r
 
 ---
 
+### How to deeplink using console
+
+adb shell am start -W -a android.intent.action.VIEW -d "https://athenalink.com/item/19" org.artemissoftware.athenalink
+adb shell am start -W -a android.intent.action.VIEW -d "olimpus://athenalink.com/item/16" org.artemissoftware.athenalink
+
+
+
 Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
