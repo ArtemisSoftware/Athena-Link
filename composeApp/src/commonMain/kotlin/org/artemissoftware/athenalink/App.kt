@@ -19,11 +19,12 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 import athenalink.composeapp.generated.resources.Res
 import athenalink.composeapp.generated.resources.compose_multiplatform
 import org.artemissoftware.athenalink.navigation.NavRoot
+import org.artemissoftware.athenalink.theme.AthenaLinkTheme
 
 @Composable
 @Preview
 fun App() {
-    MaterialTheme {
+    AthenaLinkTheme {
         NavRoot()
     }
 }
